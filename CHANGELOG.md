@@ -1,5 +1,31 @@
 # Changelog
 
+## [2.4.0](https://github.com/terraform-google-modules/terraform-example-foundation/compare/v2.3.1...v2.4.0) (2022-06-08)
+
+
+### Features
+
+* Create base environment module for step 4-projects ([#669](https://github.com/terraform-google-modules/terraform-example-foundation/issues/669)) ([7a533bf](https://github.com/terraform-google-modules/terraform-example-foundation/commit/7a533bf0f41bb2e6681c4c58267eb2cce795206c))
+* Feature/private service connect module ([#722](https://github.com/terraform-google-modules/terraform-example-foundation/issues/722)) ([b3b9145](https://github.com/terraform-google-modules/terraform-example-foundation/commit/b3b9145d1bae356ba01d33d66df55efd9b6e59c0))
+* Refactor/centralized network variable ([#665](https://github.com/terraform-google-modules/terraform-example-foundation/issues/665)) ([cdb97bf](https://github.com/terraform-google-modules/terraform-example-foundation/commit/cdb97bf306c316d4dea71d12f41b88bb02a9f92d))
+* Remove redundant optional firewall rules ([#647](https://github.com/terraform-google-modules/terraform-example-foundation/issues/647)) ([6e17729](https://github.com/terraform-google-modules/terraform-example-foundation/commit/6e1772942f08e6cafa9c167f6eff6e9ee8434a25))
+
+
+### Bug Fixes
+
+* add a chmod command for project infra pipeline runners([#657](https://github.com/terraform-google-modules/terraform-example-foundation/issues/657)) ([2730050](https://github.com/terraform-google-modules/terraform-example-foundation/commit/2730050a8ce69e125cc4b2e6d03934d7b34d7a10))
+* always grant view permissions at org to CB SA for TFV ([#645](https://github.com/terraform-google-modules/terraform-example-foundation/issues/645)) ([66d4c5b](https://github.com/terraform-google-modules/terraform-example-foundation/commit/66d4c5b3332571f416c06041701a29c5dc82857e))
+* bump the version of project factory to 13.0 ([#702](https://github.com/terraform-google-modules/terraform-example-foundation/issues/702)) ([78c7d90](https://github.com/terraform-google-modules/terraform-example-foundation/commit/78c7d906021327f415ed9ca6ed35964a0e28a4cb))
+* bump the version of the cloudbuild in the bootstrap step ([#642](https://github.com/terraform-google-modules/terraform-example-foundation/issues/642)) ([3f61dba](https://github.com/terraform-google-modules/terraform-example-foundation/commit/3f61dbaab143d5ca2fdaebb53bb4f858ac4218a8))
+* data_access_logs_enabled now enables read and write audit logs, defaults to false for cost savings ([#630](https://github.com/terraform-google-modules/terraform-example-foundation/issues/630)) ([8391f1b](https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9))
+* grant permissions required by TFV to CB SA ([#629](https://github.com/terraform-google-modules/terraform-example-foundation/issues/629)) ([ffa6a93](https://github.com/terraform-google-modules/terraform-example-foundation/commit/ffa6a93582bdf242bf273a2ff2e984cf6149bb89))
+* hardcode the regions variables in the `3-networks/shared` ([#699](https://github.com/terraform-google-modules/terraform-example-foundation/issues/699)) ([9c320d8](https://github.com/terraform-google-modules/terraform-example-foundation/commit/9c320d8326c9dcd0799093a985fdb0fc2fe7cf04))
+* Hub and Spoke build ([#648](https://github.com/terraform-google-modules/terraform-example-foundation/issues/648)) ([98a3441](https://github.com/terraform-google-modules/terraform-example-foundation/commit/98a344146a4852d54aa0ca1302639166a3e2392f))
+* make first gcloud builds submit wait for the creation of the default cloud build bucket ([#719](https://github.com/terraform-google-modules/terraform-example-foundation/issues/719)) ([3e2ca41](https://github.com/terraform-google-modules/terraform-example-foundation/commit/3e2ca413d2fd57c309748109f56008be2503ff9a))
+* set the location for cloud build related buckets in step4 based in the default region ([#667](https://github.com/terraform-google-modules/terraform-example-foundation/issues/667)) ([b2b3aca](https://github.com/terraform-google-modules/terraform-example-foundation/commit/b2b3acaaee51942b1f2f90b08c2b79bfc40b4205))
+* update TPG version constraints to allow 4.0 in 5-app-infra ([#721](https://github.com/terraform-google-modules/terraform-example-foundation/issues/721)) ([90f15f2](https://github.com/terraform-google-modules/terraform-example-foundation/commit/90f15f28c03f391dc95aaa843f1a5727772bd8e4))
+* updates for tfv1 compat ([#637](https://github.com/terraform-google-modules/terraform-example-foundation/issues/637)) ([235698b](https://github.com/terraform-google-modules/terraform-example-foundation/commit/235698b4312e1afa1cdf7268c27eba820543b94f))
+
 ### [2.3.1](https://www.github.com/terraform-google-modules/terraform-example-foundation/compare/v2.3.0...v2.3.1) (2021-10-15)
 
 
