@@ -45,6 +45,7 @@ module "seed_bootstrap" {
   parent_folder                  = var.parent_folder == "" ? "" : local.parent
   org_admins_org_iam_permissions = local.org_admins_org_iam_permissions
   project_prefix                 = var.project_prefix
+  depends_on                     = [google_folder.bootstrap]
 
   project_labels = {
     environment       = "bootstrap"
@@ -120,6 +121,7 @@ module "cloudbuild_bootstrap" {
   terraform_validator_release = "v0.6.0"
   terraform_version           = "0.13.7"
   terraform_version_sha256sum = "4a52886e019b4fdad2439da5ff43388bbcc6cce9784fde32c53dcd0e28ca9957"
+  depends_on                  = [module.seed_bootstrap]
 
   activate_apis = [
     "serviceusage.googleapis.com",
